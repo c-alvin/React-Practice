@@ -4,7 +4,8 @@
   "private": true,
   "description": "Code exercise solutions.",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "NODE_ENV=production webpack"
   },
   "devDependencies": {
     "eslint": "^8.25.0",
@@ -19,5 +20,13 @@
     "stylelint": "^14.14.0",
     "stylelint-config-recommended": "^9.0.0",
     "stylelint-config-standard": "^27.0.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/plugin-transform-react-jsx": "^7.21.0",
+    "babel-loader": "^9.1.2",
+    "react-dom": "^18.2.0",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   }
 }
